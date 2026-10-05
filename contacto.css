@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+:root {
+    --color-black: #000;
+    --color-white: #fff;
+    --color-blue: #037bc0;
+    --color-dark-blue: #005485;
+    --color-green: #8cbc00;
+    --color-green-dark: #72930e;
+    --color-gris: #e1e1e1;
+}
+
+body {
+    font-family: 'Open Sans', system-ui, -apple-system, sans-serif;
+    color: var(--color-black);
+    background-color: var(--color-white);
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+
+/* ==========================================
+   2. ENCABEZADO Y NAVEGACIÓN (HEADER)
+   ========================================== */
+.site-header {
+    display: block;
+    width: 100%;
+    background-color: var(--color-white);
+    border-bottom: 1px solid var(--color-white);
+    position: relative;
+    z-index: 100;
+}
+
+.logo-container {
+    text-align: center;
+    padding: 0 0 50px 0;
+    margin-top: 5rem;
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    font-size: 4rem;
+}
+
+
+.site-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 4.1rem;
+    font-weight: 700;
+    color: var(--color-black);
+}
+
+
+.site-title .highlight {
+    color: var(--color-blue);
+}
+
+
+
+.main-nav {
+    border-top: 0.1rem solid var(--color-gris);
+}
+.main-nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 245px;
+    padding: 40px 0;
+    
+}
+
+.main-nav a {
+    font-family: "Raleway", sans-serif;
+    font-size: 1.3rem;
+    color: var(--color-black);
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+
+
+/* ==========================================
+   3. FORMULARIO
+   ========================================== */
+
+
+.contenedor {
+    max-width: 800px;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.contacto-seccion h1 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 4rem 0 2rem 0;
+    color: var(--color-black);
+}
+
+.formulario fieldset {
+    border: 1px solid var(--color-black);
+    padding: 4rem 3rem 2rem 3rem;
+    margin-bottom: 2.5rem;
+    background-color: var(--color-white);
+}
+
+.formulario legend {
+    background-color: var(--color-dark-blue);
+    color: var(--color-white);
+    width: 105%;               
+    margin-left: -2.5%;      
+    text-align: center;
+    padding: 1.2rem 0;
+    font-weight: 700;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+}
+
+
+.campo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2.5rem;
+}
+.campo-textarea {
+    align-items: flex-start; 
+}
+.campo label {
+    flex: 0 0 150px;           
+    font-size: 1.6rem;
+    color: var(--color-black);
+}
+
+
+.campo input[type="text"],
+.campo input[type="email"],
+.campo input[type="tel"],
+.campo select,
+.campo textarea {
+    flex: 1;
+    padding: 1.2rem;
+    border: 1px solid var(--color-gris);
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5rem;
+    outline: none;
+}
+
+.campo textarea {
+    height: 180px;
+    resize: vertical;
+}
+
+#categoria {
+    height: 80px;
+}
+
+.campo input[type="radio"] {
+    width: 1.8rem;
+    height: 1.8rem;
+    cursor: pointer;
+}
+
+
+.btn-enviar {
+    background-color: var(--color-green); 
+    color: var(--color-white);
+    border: none;
+    padding: 1rem 1.5rem;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    margin-bottom: 5rem;
+}
+
+.btn-enviar:hover {
+    background-color: var(--color-green-dark);
+}
+
+
+
+/* ==========================================
+   9. ADAPTABILIDAD RESPONSIVE
+   ========================================== */
+.container {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 auto;
+    box-sizing: border-box;
+}
+
+.site-footer {
+    border-top: 1px solid var(--color-gris);
+    padding-top: 40px;
+    margin-top: 60px;
+    background-color: var(--color-white);
+}
+
+.footer-columns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.footer-column h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: var(--color-black);
+}
+
+.footer-column ul li {
+    margin-bottom: 9px;
+}
+
+.footer-column ul a {
+    color: var(--color-black);
+    font-size: 1.4rem;
+    font-family: 'Raleway', sans-serif;
+}
+
+.footer-copyright {
+    text-align: center;
+    padding: 25px 0;
+    font-size: 1.4rem;
+    color: var(--color-black);
+}
+@media (max-width: 1000px) {
+    .main-nav ul {
+        flex-direction: column; /* Apila los enlaces uno debajo del otro */
+        align-items: center;    /* Centra los enlaces */
+        gap: 0.7rem;            /* Distancia uniforme entre cada enlace */
+    }
+    .footer-columns {
+        grid-template-columns: 1fr; /* Cambia a una sola columna */
+        text-align: center;         /* Centra todo el texto */
+        gap: 3rem;
+    }
+
+    .footer-column {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

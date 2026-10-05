@@ -1,0 +1,312 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+:root {
+    --color-black: #000;
+    --color-white: #fff;
+    --color-blue: #037bc0;
+    --color-dark-blue: #005485;
+    --color-green: #8cbc00;
+    --color-green-dark: #72930e;
+    --color-gris: #e1e1e1;
+}
+
+body {
+    font-family: 'Open Sans', system-ui, -apple-system, sans-serif;
+    color: var(--color-black);
+    background-color: var(--color-white);
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+
+/* ==========================================
+   2. ENCABEZADO Y NAVEGACIÓN (HEADER)
+   ========================================== */
+.site-header {
+    display: block;
+    width: 100%;
+    background-color: var(--color-white);
+    border-bottom: 1px solid var(--color-white);
+    position: relative;
+    z-index: 100;
+}
+
+.logo-container {
+    text-align: center;
+    padding: 0 0 50px 0;
+    margin-top: 5rem;
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    font-size: 4rem;
+}
+
+
+.site-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 4.1rem;
+    font-weight: 700;
+    color: var(--color-black);
+}
+
+
+.site-title .highlight {
+    color: var(--color-blue);
+}
+
+
+
+.main-nav {
+    border-top: 0.1rem solid var(--color-gris);
+}
+.main-nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 245px;
+    padding: 40px 0;
+    
+}
+
+.main-nav a {
+    font-family: "Raleway", sans-serif;
+    font-size: 1.3rem;
+    color: var(--color-black);
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+
+
+/* ========================================== 
+    7. TARJETAS DE PRODUCTOS
+   ========================================== */
+.container {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 auto;
+    box-sizing: border-box;
+}
+.section-Nuestros {
+    display: block;
+    width: 100%;
+    font-family: 'Playfair Display', Georgia, serif;
+    text-align: center;
+    font-size: 3.2rem;
+    font-weight: 400;
+    margin: 80px 0 50px 0;
+    color: var(--color-black);
+}
+
+
+/* ========================================== 
+  7. TARJETAS DE PRODUCTOS
+==========================================  */
+.featured-product {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    margin-bottom: 30px;
+    background-color: var(--color-white);
+    overflow: hidden;
+}
+
+.featured-product img {
+    max-width: 100%;
+    height: 550px;
+   
+    object-fit: cover;
+    object-position: left; 
+    display: block;
+    transition: transform 0.4s ease;
+
+    overflow: hidden;
+    transform: scale(1.45); 
+    transform-origin: left center; 
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-bottom: 30px;
+}
+
+.products-grid-three {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-bottom: 50px;
+}
+
+.product-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.product-card img {
+    max-width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.product-info {
+    background-color: var(--color-blue);
+    color: var(--color-white);
+    padding: 4rem 2.5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    position: relative; /* Habilita el uso de z-index [cite: 10] */
+    z-index: 2;
+}
+.product-info1 {
+    background-color: var(--color-blue);
+    color: var(--color-white);
+    padding: 2rem 1.5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    position: relative; /* Habilita el uso de z-index [cite: 10] */
+    z-index: 2;
+}
+
+
+.product-info h3 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 2.8rem;
+    margin: 0 0 1.5rem 0;
+}
+
+.product-info p {
+    font-size: 1.5rem;
+    margin: 0 0 1.5rem 0;
+    line-height: 1.5;
+}
+.product-info1 h3 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 2.2rem;
+    margin: 0 0 0.5rem 0;
+}
+
+.product-info1 p {
+    font-size: 1.4rem;
+    margin: 0 0 0.8rem 0;
+    line-height: 1.3;
+}
+.product-price {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin-bottom: 2rem;
+    display: block; 
+}
+
+.btn-add {
+    background-color: var(--color-green);
+    display: block;
+    color: var(--color-white);
+    text-transform: uppercase;
+    border: none;
+    padding: 1.2rem 1rem;
+    font-size: 1.3rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    width: 100%;
+}
+
+.btn-add:hover {
+    background-color: var(--color-green-dark);
+}
+
+
+
+
+/* ==========================================
+   9. ADAPTABILIDAD RESPONSIVE
+   ========================================== */
+.container {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 auto;
+    box-sizing: border-box;
+}
+
+.site-footer {
+    border-top: 1px solid var(--color-gris);
+    padding-top: 40px;
+    margin-top: 0;
+    background-color: var(--color-white);
+}
+
+.footer-columns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.footer-column h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: var(--color-black);
+}
+
+.footer-column ul li {
+    margin-bottom: 9px;
+}
+
+.footer-column ul a {
+    color: var(--color-black);
+    font-size: 1.4rem;
+    font-family: 'Raleway', sans-serif;
+}
+
+.footer-copyright {
+    text-align: center;
+    padding: 25px 0;
+    font-size: 1.4rem;
+    color: var(--color-black);
+}
+@media (max-width: 1000px) {
+    .main-nav ul {
+        flex-direction: column; 
+        align-items: center;   
+        gap: 0.7rem;            
+    }
+    .footer-columns {
+        grid-template-columns: 1fr; 
+        text-align: center;         
+        gap: 3rem;
+    }
+
+    .footer-column {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
