@@ -78,7 +78,7 @@ ul {
 .main-nav ul {
     display: flex;
     justify-content: center;
-    gap: 245px;
+    gap: 150px;
     padding: 40px 0;
     
 }
@@ -204,7 +204,7 @@ ul {
    ========================================== */
 .container {
     width: 100%;
-    max-width: 1600px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 auto;
     box-sizing: border-box;
@@ -250,13 +250,13 @@ ul {
 }
 @media (max-width: 1000px) {
     .main-nav ul {
-        flex-direction: column; /* Apila los enlaces uno debajo del otro */
-        align-items: center;    /* Centra los enlaces */
-        gap: 0.7rem;            /* Distancia uniforme entre cada enlace */
+        flex-direction: column; 
+        align-items: center;   
+        gap: 0.7rem;            
     }
     .footer-columns {
-        grid-template-columns: 1fr; /* Cambia a una sola columna */
-        text-align: center;         /* Centra todo el texto */
+        grid-template-columns: 1fr; 
+        text-align: center;         
         gap: 3rem;
     }
 

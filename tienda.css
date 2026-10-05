@@ -78,7 +78,7 @@ ul {
 .main-nav ul {
     display: flex;
     justify-content: center;
-    gap: 245px;
+    gap: 150px;
     padding: 40px 0;
     
 }
@@ -97,7 +97,7 @@ ul {
    ========================================== */
 .container {
     width: 100%;
-    max-width: 1600px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 auto;
     box-sizing: border-box;
@@ -173,7 +173,7 @@ ul {
     flex-direction: column;
     justify-content: space-between;
     box-sizing: border-box;
-    position: relative; /* Habilita el uso de z-index [cite: 10] */
+    position: relative; 
     z-index: 2;
 }
 .product-info1 {
@@ -185,7 +185,7 @@ ul {
     flex-direction: column;
     justify-content: space-between;
     box-sizing: border-box;
-    position: relative; /* Habilita el uso de z-index [cite: 10] */
+    position: relative; 
     z-index: 2;
 }
 
@@ -248,7 +248,7 @@ ul {
    ========================================== */
 .container {
     width: 100%;
-    max-width: 1600px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 auto;
     box-sizing: border-box;

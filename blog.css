@@ -78,7 +78,7 @@ ul {
 .main-nav ul {
     display: flex;
     justify-content: center;
-    gap: 245px;
+    gap: 150px;
     padding: 40px 0;
     
 }
@@ -101,7 +101,7 @@ ul {
     padding-bottom: 4rem;             
 }
 .contenedor {
-    max-width: 1600px;
+    max-width: 1200px;
     margin: 0 auto;
     width: 100%;
 }
@@ -116,7 +116,7 @@ ul {
     font-size: 3.8rem;
     margin-top: 4rem;
     margin-bottom: 4rem;
-    color: #000000;
+    color: var(--color-black);
 }
 
 
@@ -224,7 +224,7 @@ ul {
    ========================================== */
 .container {
     width: 100%;
-    max-width: 1600px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 auto;
     box-sizing: border-box;
